@@ -5,11 +5,13 @@ function numberReverse(number){
     }
 
 function next_pal(n){
-    let palindromo=n+1
-    while(palindromo != numberReverse(palindromo)){
+    if(isNaN(n)){return "Debe ingresar un numero"}
+    else{let palindromo=n+1
+        while(palindromo != numberReverse(palindromo)){
         palindromo++
-    }
+        }
     return palindromo
+    }
 }
 
-console.log(next_pal(2552))
+console.log(next_pal("AS"))
